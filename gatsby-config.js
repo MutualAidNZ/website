@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Mutual Aid New Zealand (MANZ)`,
-    description: ``,
-    author: `@gatsbyjs`,
+    description: `MANZ is a group of volunteers supporting local community groups organising mutual aid throughout the Covid-19 outbreak in Aotearoa New Zealand. We focus on providing resources and connecting people to their nearest local groups, willing volunteers and those in need.`,
+    author: `@mutualaidnewzealand`,
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -25,7 +25,7 @@ module.exports = {
         background_color: `#047BF2`,
         theme_color: `#047BF2`,
         display: `minimal-ui`,
-        icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/icon.png`,
       },
     },
     {
