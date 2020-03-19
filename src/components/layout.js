@@ -30,7 +30,15 @@ const Layout = ({ children, showHeader = true }) => {
       <Container>
         <main>{children}</main>
         <footer>
-          <hr />© Mutual Aid New Zealand (MANZ) {new Date().getFullYear()}
+          <hr />© Mutual Aid New Zealand (MANZ) {new Date().getFullYear()} -
+          Built with ❤️ by volunteers.{" "}
+          <a
+            href="https://github.com/MutualAidNZ/org/issues/1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Interested in helping out?
+          </a>
         </footer>
       </Container>
     </>

@@ -1,18 +1,15 @@
 import React from "react"
-import { Link } from "gatsby"
 import {
   Alert,
   Button,
   Col,
   Row,
-  CardGroup,
   Card,
   CardDeck,
   Jumbotron,
 } from "react-bootstrap"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
 
 import networkSVG from "../images/network.svg"
@@ -26,7 +23,11 @@ const IndexPage = () => (
     >
       <Row className="d-flex align-items-center">
         <Col md={4}>
-          <img src={networkSVG} className="img-fluid" />
+          <img
+            src={networkSVG}
+            className="img-fluid"
+            alt="Graphic showing people talking as part of a network"
+          />
         </Col>
         <Col>
           <h1>Welcome to MANZ!</h1>
@@ -50,6 +51,7 @@ const IndexPage = () => (
           <Button
             variant={"primary"}
             size={"sm"}
+            rel="noopener noreferrer"
             href="https://docs.google.com/spreadsheets/d/1PlLEMOEVyjicJNaefJ0aMHN2R2kce3XPJW9k2rPS-5E/edit#gid=0"
             target="_blank"
           >
@@ -62,13 +64,14 @@ const IndexPage = () => (
           <Card.Title>Register your support group</Card.Title>
           <Card.Text>
             <p>
-              If you’re the admin of a local support group, please share it via the form
-              below.
+              If you’re the admin of a local support group, please share it via
+              the form below.
             </p>
           </Card.Text>
           <Button
             variant={"primary"}
             size={"sm"}
+            rel="noopener noreferrer"
             href="https://docs.google.com/forms/d/e/1FAIpQLSegfJZiFxcz-F6lDdqHG-1Xo6YhJi479F-0qt2Dqi0JkgqpMw/viewform"
             target="_blank"
           >
@@ -98,8 +101,10 @@ const IndexPage = () => (
       affiliated with MANZ and we are not accountable for their activities. MANZ
       is run entirely by volunteers and not medical professionals. For up to
       date medical advice you should continue to check the{` `}
-      <a href="https://covid19.govt.nz/">official COVID-19 website</a> for
-      further announcements.
+      <a href="https://covid19.govt.nz/" rel="noopener noreferrer">
+        official COVID-19 website
+      </a>{" "}
+      for further announcements.
     </Alert>
   </Layout>
 )
