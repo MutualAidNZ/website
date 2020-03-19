@@ -20,8 +20,11 @@ import networkSVG from "../images/network.svg"
 const IndexPage = () => (
   <Layout showHeader={false}>
     <SEO title="Home" />
-    <Jumbotron className="mt-4" style={{ backgroundColor: "var(--primary)", color: "#fff" }}>
-      <Row className="d-flex align-items-center" >
+    <Jumbotron
+      className="mt-4"
+      style={{ backgroundColor: "var(--primary)", color: "#fff" }}
+    >
+      <Row className="d-flex align-items-center">
         <Col md={4}>
           <img src={networkSVG} className="img-fluid" />
         </Col>
@@ -66,7 +69,7 @@ const IndexPage = () => (
           <Button
             variant={"primary"}
             size={"sm"}
-            href="https://docs.google.com/spreadsheets/d/1PlLEMOEVyjicJNaefJ0aMHN2R2kce3XPJW9k2rPS-5E/edit#gid=0"
+            href="https://docs.google.com/forms/d/e/1FAIpQLSegfJZiFxcz-F6lDdqHG-1Xo6YhJi479F-0qt2Dqi0JkgqpMw/viewform"
             target="_blank"
           >
             Register a support group
@@ -82,13 +85,7 @@ const IndexPage = () => (
               help you run your community group.
             </p>
           </Card.Text>
-          <Button
-            variant={"secondary"}
-            size={"sm"}
-            disabled
-            href="https://docs.google.com/spreadsheets/d/1PlLEMOEVyjicJNaefJ0aMHN2R2kce3XPJW9k2rPS-5E/edit#gid=0"
-            target="_blank"
-          >
+          <Button variant={"secondary"} size={"sm"} disabled target="_blank">
             Resources page coming soon
           </Button>
         </Card.Body>
