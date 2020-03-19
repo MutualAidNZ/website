@@ -13,7 +13,7 @@ import Header from "./header"
 import "./layout.scss"
 import { Container } from "react-bootstrap"
 
-const Layout = ({ children }) => {
+const Layout = ({ children, showHeader = true }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -26,11 +26,11 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      {showHeader && <Header siteTitle={data.site.siteMetadata.title} />}
       <Container>
         <main>{children}</main>
         <footer>
-          <hr />© Mutual Aid New Zealand {new Date().getFullYear()}
+          <hr />© Mutual Aid New Zealand (MANZ) {new Date().getFullYear()}
         </footer>
       </Container>
     </>
