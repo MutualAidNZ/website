@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Mutual Aid New Zealand (MANZ)`,
     description: `MANZ is a group of volunteers supporting local community groups organising mutual aid throughout the Covid-19 outbreak in Aotearoa New Zealand. We focus on providing resources and connecting people to their nearest local groups, willing volunteers and those in need.`,
-    author: `@mutualaidnewzealand`,
+    author: `@manz_org`,
   },
   plugins: [
     `gatsby-plugin-sass`,

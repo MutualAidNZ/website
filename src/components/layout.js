@@ -29,7 +29,7 @@ const Layout = ({ children, showHeader = true }) => {
       {showHeader && <Header siteTitle={data.site.siteMetadata.title} />}
       <Container>
         <main>{children}</main>
-        <footer>
+        <footer className="mb-4">
           <hr />© Mutual Aid New Zealand (MANZ) {new Date().getFullYear()} -
           Built with ❤️ by volunteers.{" "}
           <a
