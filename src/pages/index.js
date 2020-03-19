@@ -62,7 +62,7 @@ const IndexPage = () => (
           <Card.Title>Register your support group</Card.Title>
           <Card.Text>
             <p>
-              If you’re the admin of a local group, please share it via the form
+              If you’re the admin of a local support group, please share it via the form
               below.
             </p>
           </Card.Text>
