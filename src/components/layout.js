@@ -41,7 +41,7 @@ const Layout = ({ children, showHeader = true }) => {
           </a>{" "}
           for further announcements.
         </Alert>
-        <footer className="mb-4">
+        <footer className="mb-4 text-muted" style={{ fontSize: 14 }}>
           <hr />© Mutual Aid New Zealand (MANZ) {new Date().getFullYear()} -
           Built with ❤️ by volunteers.{" "}
           <a
@@ -49,7 +49,7 @@ const Layout = ({ children, showHeader = true }) => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Interested in helping out?
+            Join our tech team!
           </a>
         </footer>
       </Container>

@@ -21,6 +21,9 @@ const Header = ({ siteTitle }) => (
             Home
           </Link>
           <NavDropdown title="Resources" id="basic-nav-dropdown">
+            <Link className="dropdown-item" to="/resources">
+              Resource Library
+            </Link>
             <Link className="dropdown-item" to="/resources/volunteers">
               Guidance for Volunteers
             </Link>
