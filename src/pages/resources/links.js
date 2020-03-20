@@ -17,8 +17,13 @@ const ResourcesPage = () => (
   <Layout>
     <SEO title="Links" />
     <h1>Links</h1>
-    <p className="lead">We've got a Google document with loads of useful links for creating your community.</p>
-    <Button variant={'primary'} size={'lg'}>Open useful links document</Button>
+    <p className="lead">
+      We've got a Google document with loads of useful links for creating your
+      community.
+    </p>
+    <Button variant={"primary"} size={"lg"}>
+      Open useful links document
+    </Button>
   </Layout>
 )
 

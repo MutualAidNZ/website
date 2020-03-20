@@ -8,6 +8,9 @@ import {
   CardDeck,
   Jumbotron,
 } from "react-bootstrap"
+import { Link } from "gatsby"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faSearch, faCheck, faQuestionCircle } from "@fortawesome/free-solid-svg-icons"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -55,7 +58,7 @@ const IndexPage = () => (
             href="https://docs.google.com/spreadsheets/d/1PlLEMOEVyjicJNaefJ0aMHN2R2kce3XPJW9k2rPS-5E/edit#gid=0"
             target="_blank"
           >
-            Find a support group near you
+            <FontAwesomeIcon icon={faSearch} className="mr-1" /> Find a support group near you
           </Button>
         </Card.Body>
       </Card>
@@ -63,10 +66,8 @@ const IndexPage = () => (
         <Card.Body>
           <Card.Title>Register your support group</Card.Title>
           <Card.Text>
-            <p>
               If you’re the admin of a local support group, please share it via
               the form below.
-            </p>
           </Card.Text>
           <Button
             variant={"primary"}
@@ -75,7 +76,7 @@ const IndexPage = () => (
             href="https://docs.google.com/forms/d/e/1FAIpQLSegfJZiFxcz-F6lDdqHG-1Xo6YhJi479F-0qt2Dqi0JkgqpMw/viewform"
             target="_blank"
           >
-            Register a support group
+            <FontAwesomeIcon icon={faCheck} className="mr-1" /> Register a support group
           </Button>
         </Card.Body>
       </Card>
@@ -83,10 +84,8 @@ const IndexPage = () => (
         <Card.Body>
           <Card.Title>Community Resources</Card.Title>
           <Card.Text>
-            <p>
               We are building up a library of resources, tools and processes to
               help you run your community group.
-            </p>
           </Card.Text>
           <Button variant={"secondary"} size={"sm"} disabled target="_blank">
             Resources page coming soon
@@ -94,6 +93,17 @@ const IndexPage = () => (
         </Card.Body>
       </Card>
     </CardDeck>
+
+    <hr />
+
+    <Alert variant={"primary"}>
+      <strong><FontAwesomeIcon icon={faQuestionCircle} className="mr-1" /> Want to create a support group but don't know how?</strong>
+      <br />{" "}
+      <Link to="/resources/community-starter">
+        Don't worry. We have{` `}
+        created a starter pack to help you get started.
+      </Link>
+    </Alert>
   </Layout>
 )
 

@@ -1,18 +1,8 @@
 import React from "react"
-import {
-  Accordion,
-  Button,
-  Col,
-  Row,
-  Card,
-  CardDeck,
-  Jumbotron,
-} from "react-bootstrap"
 
 import Layout from "../../../components/layout"
 import SEO from "../../../components/seo"
 import Tip from "../../../components/tip"
-import SidebarLayout from "../../../components/sidebar-layout"
 
 const ResourcesPage = () => (
   <Layout>
