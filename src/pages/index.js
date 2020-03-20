@@ -75,16 +75,14 @@ const IndexPage = () => (
             If you’re the admin of a local support group, please share it via
             the form below.
           </Card.Text>
-          <Button
-            variant={"primary"}
-            size={"sm"}
+          <Link to="/register-group" className="btn btn-primary btn-sm"
             rel="noopener noreferrer"
             href="https://docs.google.com/forms/d/e/1FAIpQLSegfJZiFxcz-F6lDdqHG-1Xo6YhJi479F-0qt2Dqi0JkgqpMw/viewform"
             target="_blank"
           >
             <FontAwesomeIcon icon={faCheck} className="mr-1" /> Register a
             support group
-          </Button>
+          </Link>
         </Card.Body>
       </Card>
       <Card>
@@ -94,9 +92,9 @@ const IndexPage = () => (
             We are building up a library of resources, tools and processes to
             help you run your community group.
           </Card.Text>
-          <Button variant={"primary"} size={"sm"} href="/resources">
+          <Link to="/resources" className="btn btn-primary btn-sm">
             <FontAwesomeIcon icon={faBook} className="mr-1" /> Resource Library
-          </Button>
+          </Link>
         </Card.Body>
       </Card>
     </CardDeck>
