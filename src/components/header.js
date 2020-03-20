@@ -28,6 +28,9 @@ const Header = ({ siteTitle }) => (
               Guidance for Volunteers
             </Link>
           </NavDropdown>
+          <Link className="nav-link" to="/contact">
+            Contact Us
+          </Link>
         </Nav>
       </Navbar.Collapse>
     </Container>
