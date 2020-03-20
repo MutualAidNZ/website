@@ -100,7 +100,7 @@ const IndexPage = () => (
         </Card.Body>
       </Card>
     </CardDeck>
-
+{/* 
     <hr />
 
     <Alert variant={"primary"}>
@@ -113,7 +113,7 @@ const IndexPage = () => (
         Don't worry. We have{` `}
         created a starter pack to help you get started.
       </Link>
-    </Alert>
+    </Alert> */}
   </Layout>
 )
 
