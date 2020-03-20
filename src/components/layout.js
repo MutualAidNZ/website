@@ -8,10 +8,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
+import { Container, Alert } from "react-bootstrap"
 
 import Header from "./header"
 import "./layout.scss"
-import { Container } from "react-bootstrap"
 
 const Layout = ({ children, showHeader = true }) => {
   const data = useStaticQuery(graphql`
@@ -29,6 +29,18 @@ const Layout = ({ children, showHeader = true }) => {
       {showHeader && <Header siteTitle={data.site.siteMetadata.title} />}
       <Container>
         <main>{children}</main>
+        <hr className="my-4" />
+        <Alert variant={"warning"} style={{ fontSize: 16 }}>
+          <strong>Disclaimer:</strong> MANZ is a support network for people
+          organising in their communities. Local support groups are not directly
+          affiliated with MANZ and we are not accountable for their activities.
+          MANZ is run entirely by volunteers and not medical professionals. For
+          up to date medical advice you should continue to check the{` `}
+          <a href="https://covid19.govt.nz/" rel="noopener noreferrer">
+            official COVID-19 website
+          </a>{" "}
+          for further announcements.
+        </Alert>
         <footer className="mb-4">
           <hr />© Mutual Aid New Zealand (MANZ) {new Date().getFullYear()} -
           Built with ❤️ by volunteers.{" "}
