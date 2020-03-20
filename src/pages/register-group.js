@@ -20,11 +20,12 @@ const ResourcesPage = () => (
     <ul>
       <li>
         <strong>
-          Please make sure your Facebook group name contains the MANZ acronym.
+          Please make sure your Facebook group name contains the MANZ acronym,
+          and follows the following format:
         </strong>
         This helps those in need find you more quickly.{" "}
         <span className="text-muted">
-          Example: North Shore MANZ - COVID Support Group
+          Example: North Shore MANZ - COVID-19 Mutual Aid
         </span>
       </li>
       <li>
