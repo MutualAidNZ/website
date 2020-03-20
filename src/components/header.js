@@ -6,7 +6,7 @@ import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap"
 const Header = ({ siteTitle }) => (
   <Navbar
     className="mb-4"
-    bg="brand"
+    bg="dark"
     variant="dark"
     expand="lg"
     style={{ backgroundColor: "var(--primary)" }}
@@ -24,6 +24,12 @@ const Header = ({ siteTitle }) => (
             <Link className="dropdown-item" to="/resources">
               Resource Library
             </Link>
+            <a
+              href="https://docs.google.com/document/d/1WrQKloQQ-tAZ6fN-NRTLyd5Lo5eQOkgOiyRCgwsID0s/edit"
+              className="dropdown-item"
+            >
+              How to start a support group
+            </a>
             <Link className="dropdown-item" to="/resources/volunteers">
               Guidance for Volunteers
             </Link>

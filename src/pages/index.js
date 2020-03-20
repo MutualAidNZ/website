@@ -23,7 +23,7 @@ import SEO from "../components/seo"
 import networkSVG from "../images/network.svg"
 
 const IndexPage = () => (
-  <Layout showHeader={false}>
+  <Layout>
     <SEO title="Home" />
     <Jumbotron
       className="mt-4"
@@ -49,6 +49,25 @@ const IndexPage = () => (
       </Row>
     </Jumbotron>
     <CardDeck>
+      <Card bg={"primary"} text={"white"}>
+        <Card.Body>
+          <Card.Title>Start a support group</Card.Title>
+          <Card.Text>
+            Want to create a support group in your community? Need a little help
+            getting started? We've got you covered.
+          </Card.Text>
+          <Button
+            variant={"light"}
+            size={"sm"}
+            target="_blank"
+            rel="noopener noreferrer"
+            href="https://docs.google.com/document/d/1WrQKloQQ-tAZ6fN-NRTLyd5Lo5eQOkgOiyRCgwsID0s/edit"
+          >
+            <FontAwesomeIcon icon={faQuestionCircle} className="mr-1" /> How to
+            start a support group
+          </Button>
+        </Card.Body>
+      </Card>
       <Card>
         <Card.Body>
           <Card.Title>Find a support group</Card.Title>
@@ -87,33 +106,21 @@ const IndexPage = () => (
           </Link>
         </Card.Body>
       </Card>
-      <Card>
-        <Card.Body>
-          <Card.Title>Community Resources</Card.Title>
-          <Card.Text>
-            We are building up a library of resources, tools and processes to
-            help you run your community group.
-          </Card.Text>
-          <Link to="/resources" className="btn btn-primary btn-sm">
-            <FontAwesomeIcon icon={faBook} className="mr-1" /> Resource Library
-          </Link>
-        </Card.Body>
-      </Card>
     </CardDeck>
-{/* 
+
     <hr />
 
     <Alert variant={"primary"}>
-      <strong>
-        <FontAwesomeIcon icon={faQuestionCircle} className="mr-1" /> Want to
-        create a support group but don't know how?
-      </strong>
-      <br />{" "}
-      <Link to="/resources/community-starter">
-        Don't worry. We have{` `}
-        created a starter pack to help you get started.
+      <strong>Community Resources</strong>
+      <p>
+        {" "}
+        We are building up a library of resources, tools and processes to help
+        you run your community group.
+      </p>
+      <Link to="/resources" className="btn btn-primary btn-sm">
+        <FontAwesomeIcon icon={faBook} className="mr-1" /> Resource Library
       </Link>
-    </Alert> */}
+    </Alert>
   </Layout>
 )
 
