@@ -75,7 +75,9 @@ const IndexPage = () => (
             If you’re the admin of a local support group, please share it via
             the form below.
           </Card.Text>
-          <Link to="/register-group" className="btn btn-primary btn-sm"
+          <Link
+            to="/register-group"
+            className="btn btn-primary btn-sm"
             rel="noopener noreferrer"
             href="https://docs.google.com/forms/d/e/1FAIpQLSegfJZiFxcz-F6lDdqHG-1Xo6YhJi479F-0qt2Dqi0JkgqpMw/viewform"
             target="_blank"
@@ -99,7 +101,7 @@ const IndexPage = () => (
       </Card>
     </CardDeck>
 
-    {/* <hr />
+    <hr />
 
     <Alert variant={"primary"}>
       <strong>
@@ -111,7 +113,7 @@ const IndexPage = () => (
         Don't worry. We have{` `}
         created a starter pack to help you get started.
       </Link>
-    </Alert> */}
+    </Alert>
   </Layout>
 )
 
