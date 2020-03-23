@@ -23,7 +23,7 @@ const ContactPage = () => (
         >
           <input type="hidden" name="form-name" value="contact" />
 
-          <Form.Group controlId="formBasicEmail">
+          <Form.Group controlId="formBasicName">
             <Form.Label>Your Name</Form.Label>
             <Form.Control name="name" type="name" placeholder="Full Name" required />
           </Form.Group>
@@ -33,7 +33,7 @@ const ContactPage = () => (
             <Form.Control name="email" type="email" placeholder="Enter email" required />
           </Form.Group>
 
-          <Form.Group controlId="formBasicEmail">
+          <Form.Group controlId="formBasicSubject">
             <Form.Label>Subject</Form.Label>
             <Form.Control name="subject" type="subject" placeholder="Subject" required />
           </Form.Group>
