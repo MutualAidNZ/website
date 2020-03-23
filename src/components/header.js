@@ -20,20 +20,9 @@ const Header = ({ siteTitle }) => (
           <Link className="nav-link" to="/">
             Home
           </Link>
-          <NavDropdown title="Resources" id="basic-nav-dropdown">
-            <Link className="dropdown-item" to="/resources">
-              Resource Library
-            </Link>
-            <a
-              href="https://docs.google.com/document/d/1WrQKloQQ-tAZ6fN-NRTLyd5Lo5eQOkgOiyRCgwsID0s/edit"
-              className="dropdown-item"
-            >
-              How to start a support group
-            </a>
-            <Link className="dropdown-item" to="/resources/volunteers">
-              Guidance for Volunteers
-            </Link>
-          </NavDropdown>
+          <Link className="nav-link" to="/resources">
+            Resources
+          </Link>
           <Link className="nav-link" to="/contact">
             Contact Us
           </Link>

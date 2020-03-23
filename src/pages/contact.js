@@ -23,25 +23,26 @@ const ContactPage = () => (
         >
           <input type="hidden" name="form-name" value="contact" />
 
-          <Form.Group controlId="formBasicEmail">
+          <Form.Group controlId="formBasicName">
             <Form.Label>Your Name</Form.Label>
-            <Form.Control type="name" placeholder="Full Name" required />
+            <Form.Control name="name" type="name" placeholder="Full Name" required />
           </Form.Group>
 
           <Form.Group controlId="formBasicEmail">
             <Form.Label>Email address</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" required />
+            <Form.Control name="email" type="email" placeholder="Enter email" required />
           </Form.Group>
 
-          <Form.Group controlId="formBasicEmail">
+          <Form.Group controlId="formBasicSubject">
             <Form.Label>Subject</Form.Label>
-            <Form.Control type="subject" placeholder="Subject" required />
+            <Form.Control name="subject" type="subject" placeholder="Subject" required />
           </Form.Group>
 
           <Form.Group controlId="formBasicContent">
             <Form.Label>Message</Form.Label>
             <Form.Control
               as="textarea"
+              name="message"
               rows="3"
               placeholder="Enter your message"
               required
