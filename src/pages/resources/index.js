@@ -49,10 +49,10 @@ const ResourcesPage = () => (
         href="https://drive.google.com/drive/folders/1IvXnGAdkCuZ0kixyJXLFTrhlzTN4RNeu"
         target="_blank"
       >
-        You can also access our resources from Google Drive.
+        You can access our resources from Google Drive.
       </a>
     </Alert>
-    {resources
+    {/* {resources
       .sort((a, b) => (a.title > b.title ? 1 : -1))
       .map(resource => (
         <div>
@@ -67,7 +67,7 @@ const ResourcesPage = () => (
           )}
           <p>{resource.description}</p>
         </div>
-      ))}
+      ))} */}
   </Layout>
 )
 

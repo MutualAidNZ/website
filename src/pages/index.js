@@ -17,6 +17,8 @@ import {
   faBook,
 } from "@fortawesome/free-solid-svg-icons"
 
+import { faFacebook } from "@fortawesome/free-brands-svg-icons"
+
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
@@ -40,11 +42,19 @@ const IndexPage = () => (
         <Col>
           <h1>Welcome to MANZ!</h1>
           <p className="lead">
-            MANZ is a group of volunteers supporting local community groups
-            organising mutual aid throughout the Covid-19 outbreak in Aotearoa
-            New Zealand. We focus on providing resources and connecting people
-            to their nearest local groups, willing volunteers and those in need.
+            Mutual Aid New Zealand (MANZ) is a volunteer organisation working
+            hard to assist local Mutual Aid groups during the Covid-19 outbreak.
+            We want local groups to deliver impact in their communities as soon
+            as possible, so we’re creating resources to help people organise
+            themselves and keep each other safe.
           </p>
+          <Button
+            variant={"outline-light"}
+            href="https://www.facebook.com/groups/506879733358410/"
+          >
+            <FontAwesomeIcon icon={faFacebook} className="mr-2" size={"1x"} />
+            Join our Facebook Group!
+          </Button>
         </Col>
       </Row>
     </Jumbotron>
@@ -63,8 +73,12 @@ const IndexPage = () => (
             rel="noopener noreferrer"
             href="https://docs.google.com/document/d/1WrQKloQQ-tAZ6fN-NRTLyd5Lo5eQOkgOiyRCgwsID0s/edit"
           >
-            <FontAwesomeIcon icon={faQuestionCircle} className="mr-1" /> How to
-            start a support group
+            <FontAwesomeIcon
+              icon={faQuestionCircle}
+              className="mr-1"
+              size={"1x"}
+            />{" "}
+            How to start a support group
           </Button>
         </Card.Body>
       </Card>
@@ -82,8 +96,8 @@ const IndexPage = () => (
             href="https://docs.google.com/spreadsheets/d/1PlLEMOEVyjicJNaefJ0aMHN2R2kce3XPJW9k2rPS-5E/edit#gid=0"
             target="_blank"
           >
-            <FontAwesomeIcon icon={faSearch} className="mr-1" /> Find a support
-            group near you
+            <FontAwesomeIcon icon={faSearch} className="mr-1" size={"1x"} />{" "}
+            Find a support group near you
           </Button>
         </Card.Body>
       </Card>
@@ -101,8 +115,8 @@ const IndexPage = () => (
             href="https://docs.google.com/forms/d/e/1FAIpQLSegfJZiFxcz-F6lDdqHG-1Xo6YhJi479F-0qt2Dqi0JkgqpMw/viewform"
             target="_blank"
           >
-            <FontAwesomeIcon icon={faCheck} className="mr-1" /> Register a
-            support group
+            <FontAwesomeIcon icon={faCheck} className="mr-1" size={"1x"} />{" "}
+            Register a support group
           </Link>
         </Card.Body>
       </Card>
