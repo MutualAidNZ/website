@@ -1,18 +1,8 @@
 import React from "react"
-import {
-  Alert,
-  Button,
-  Col,
-  Row,
-  Card,
-  CardDeck,
-  Jumbotron,
-} from "react-bootstrap"
-import { Link } from "gatsby"
+import { Alert } from "react-bootstrap"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
-import Tip from "../../components/tip"
 
 const resources = [
   {
@@ -45,7 +35,8 @@ const ResourcesPage = () => (
       This is our library of tools, processes, ideas and policies:
     </p>
     <Alert variant={"primary"}>
-      <strong>Tip: </strong><a
+      <strong>Tip: </strong>
+      <a
         href="https://drive.google.com/drive/folders/1IvXnGAdkCuZ0kixyJXLFTrhlzTN4RNeu"
         target="_blank"
       >

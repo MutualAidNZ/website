@@ -7,7 +7,7 @@
 
 import React from "react"
 import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql, Link } from "gatsby"
 import { Container, Alert } from "react-bootstrap"
 
 import Header from "./header"
@@ -41,17 +41,41 @@ const Layout = ({ children, showHeader = true }) => {
           </a>{" "}
           for further announcements.
         </Alert>
-        <footer className="mb-4 text-muted" style={{ fontSize: 14 }}>
+        <footer
+          className="mb-4 text-muted text-center"
+          style={{ fontSize: 14 }}
+        >
           <hr />© Mutual Aid New Zealand (MANZ) {new Date().getFullYear()} -
-          Built with ❤️ by volunteers.{" "}
-          <a
-            href="https://github.com/MutualAidNZ/org/issues/1"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Join our tech team!
-          </a>
+          Built with ❤️ by volunteers -{" "}
+          <Link to="/legal/privacy">Privacy Policy</Link>
         </footer>
+        <div className="my-2 text-center">
+          <img
+            alt="shielded"
+            id="shielded-logo"
+            height="60"
+            width="60"
+            style={{ cursor: "pointer", margin: 0, display: "inline" }}
+            src="https://shielded.co.nz/img/custom-logo.png"
+          />
+          <div
+            dangerouslySetInnerHTML={{
+              __html: `
+<script src="https://staticcdn.co.nz/embed/embed.js"></script>
+        <script>
+            (function () {
+                window.onload = function(){
+                  var frameName = new ds07o6pcmkorn({
+                    openElementId: "#shielded-logo"
+                });
+                frameName.init();
+                }
+            })();
+        </script>
+        `,
+            }}
+          />
+        </div>
       </Container>
     </>
   )

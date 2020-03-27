@@ -1,12 +1,11 @@
 import React from "react"
-import { Form, Card, Button } from "react-bootstrap"
 
 import Layout from "../../components/layout"
 import SEO from "../../components/seo"
 
 const ContactPage = () => (
   <Layout>
-    <SEO title="Contact us" />
+    <SEO title="Privacy Policy" />
     <h1>Privacy Policy</h1>
 
     <p>Last updated: March 21, 2020</p>
@@ -116,9 +115,12 @@ const ContactPage = () => (
       limited to:
     </p>
     <ul>
-      <li>Email address</li> <li>First name and last name</li>{" "}
-      <li>Phone number</li>{" "}
-      <li>Address, State, Province, ZIP/Postal code, City</li>{" "}
+      <li>Email address</li>
+      <li>First name and last name</li>
+      <li>Phone number</li>
+      <li>Address, State, Province, ZIP/Postal code, City</li>
+      <li>Information about whether you are self isolating</li>
+      <li>Requests you make of your local community</li>
       <li>Usage Data</li>
       <li>Social Media Data</li>
     </ul>
@@ -239,10 +241,12 @@ const ContactPage = () => (
         reasonable for their implementation.
       </li>
       <li>
-        <strong>To provide You</strong> with news, special offers and general
-        information about other goods, services and events which we offer that
-        are similar to those that you have already purchased or enquired about
-        unless You have opted not to receive such information.
+        <strong>To fulfil a community request</strong> To allow community
+        volunteers to contact you regarding requests you make on our Action Line
+        or other request gathering products. It will NEVER be shared with anyone
+        else without your express permission. We will confirm and record who you
+        agree to share your information with when an affiliated volunteer
+        contacts you.
       </li>
       <li>
         <strong>To manage Your requests:</strong> To attend and manage Your
@@ -261,33 +265,9 @@ const ContactPage = () => (
         after You visited our Service or for payment processing.
       </li>
       <li>
-        <strong>For Business transfers:</strong> We may share or transfer Your
-        personal information in connection with, or during negotiations of, any
-        merger, sale of Company assets, financing, or acquisition of all or a
-        portion of our business to another company.
-      </li>
-      <li>
-        <strong>With Affiliates:</strong> We may share Your information with Our
-        affiliates, in which case we will require those affiliates to honor this
-        Privacy Policy. Affiliates include Our parent company and any other
-        subsidiaries, joint venture partners or other companies that We control
-        or that are under common control with Us.
-      </li>
-      <li>
-        <strong>With Business partners:</strong> We may share Your information
-        with Our business partners to offer You certain products, services or
-        promotions.
-      </li>
-      <li>
-        <strong>With other users:</strong> when You share personal information
-        or otherwise interact in the public areas with other users, such
-        information may be viewed by all users and may be publicly distributed
-        outside. If You interact with other users or register through a
-        Third-Party Social Media Service, Your contacts on the Third-Party
-        Social Media Service may see Your name, profile, pictures and
-        description of Your activity. Similarly, other users will be able to
-        view descriptions of Your activity, communicate with You and view Your
-        profile.
+        <strong>With Affiliates + Communities:</strong> We may share Your
+        information with Our affiliates, in which case we will require those
+        affiliates to honor this Privacy Policy.
       </li>
     </ul>
 
@@ -330,13 +310,6 @@ const ContactPage = () => (
     </p>
 
     <h2>Disclosure of Your Personal Data</h2>
-    <h3>Business Transactions</h3>
-    <p>
-      If the Company is involved in a merger, acquisition or asset sale, Your
-      Personal Data may be transferred. We will provide notice before Your
-      Personal Data is transferred and becomes subject to a different Privacy
-      Policy.
-    </p>
     <h3>Law enforcement</h3>
     <p>
       Under certain circumstances, the Company may be required to disclose Your

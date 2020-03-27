@@ -1,7 +1,7 @@
 import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
-import { Container, Navbar, Nav, NavDropdown } from "react-bootstrap"
+import { Container, Navbar, Nav } from "react-bootstrap"
 
 const Header = ({ siteTitle }) => (
   <Navbar
@@ -22,6 +22,9 @@ const Header = ({ siteTitle }) => (
           </Link>
           <Link className="nav-link" to="/resources">
             Resources
+          </Link>
+          <Link className="nav-link" to="/about">
+            About Us
           </Link>
           <Link className="nav-link" to="/contact">
             Contact Us
